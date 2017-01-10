@@ -21,7 +21,7 @@ function changeSection (showID) {
   var contentSections = contentRemove(0);
 
   // Fade in new item
-  $(contentSections[showID]).fadeIn(1500);
+  $(contentSections[showID]).fadeIn(150);
 }
 
 // Mobile navbar dropdown.
