@@ -7,13 +7,14 @@ html, body {
   width: 100%;
 }
 
+
 /* Navbar */
 #wrapper_nav {
-  opacity: .95;
+
   position: fixed;
   text-align: center;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
 }
 
 #regular_nav {
@@ -34,7 +35,7 @@ html, body {
 }
 
 ul.regular_nav {
-  background-color: rgba(139, 67, 14, 0.8);
+  background-color: #A8A7A7;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -44,6 +45,10 @@ ul.regular_nav {
 ul.regular_nav li {
   float: left;
   width: 12.5%;
+}
+
+ul li:hover {
+  background-color: #373737;
 }
 
 ul.regular_nav li a, ul.mobile_nav li a {
@@ -56,8 +61,8 @@ ul.regular_nav li a, ul.mobile_nav li a {
   transition: 0.3s;
 }
 
-ul li:hover a{
-  background-color: white;
+ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
+  color: white;
 }
 
 /* Main Content */
@@ -100,7 +105,7 @@ ul li:hover a{
   width: 100%;
 }
 
-/* Footer - only shown on home cycle page */
+/* Footer - only shown on home cycle page
 #wrapper_home footer {
   background-color: rgba(128,128,128,0.4);
   bottom: 0;
@@ -113,6 +118,7 @@ ul li:hover a{
   text-align: center;
   width: 380px;
 }
+*/
 
 /* About Section */
 #wrapper_about img {
@@ -126,7 +132,7 @@ ul li:hover a{
 }
 
 #wrapper_about a,a:link,a:visited {
- color: #8b430e;
+ color: #CC527A;
  text-decoration:none;
 }
 
@@ -166,7 +172,7 @@ ul li:hover a{
 }
 
 .portfolio_piece:hover {
-  background-color: rgba(128,128,128,0.05);
+  background-color: rgba(71,71,71,0.05);
 }
 
 .portfolio_piece p{
@@ -230,15 +236,7 @@ ul li:hover a{
   }
 
   ul li {
-    background-color: rgba(139, 67, 14, 0.8);
-  }
-
-  ul li:hover a {
-    background-color: transparent;
-  }
-
-  ul li:hover {
-    background-color: white;
+    background-color: #A8A7A7;
   }
 
   /* Main Content Section */

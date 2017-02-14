@@ -56,14 +56,15 @@
           <!--Onclick will do same as navbar-->
           <div id="cycler">
             <img id="ecom" class="home_imgs active" src="img/mockups/web/ecom_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('2')">
+            <img id="time" class="home_imgs other" src="img/mockups/web/time_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('2')">
             <img id="code" class="home_imgs other" src="img/mockups/code/smart_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('3')">
             <img id="gui" class="home_imgs other" src="img/mockups/code/boggle_main_gui_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('3')">
             <img id="ui" class="home_imgs other" src="img/mockups/ui/line_main_iphone.jpg" height="150" width="180" alt="image" onclick="changeSection('4')">
           </div>
-          <!--Only shown on home page to explain to user site navigation-->
+          <!--Only shown on home page to explain to user site navigation
           <footer>
             <p>Welcome!<br/> Click on the nav bar or any image to get started.</p>
-          </footer>
+          </footer> -->
         </section>
 
         <section id="wrapper_about" class="content">
@@ -91,6 +92,30 @@
         <section id="wrapper_web" class="content">
           <!--Repeated structure for all images-->
           <!--Start-->
+          <div class="portfolio_piece">
+            <div class="portfolio_title">
+              <h3>Time and Distance</h3>
+              <div class="portfolio_img">
+                <a href="img/mockups/web/time_main_mac.jpg" data-lightbox="webWork" data-title="In-Time Desktop">
+                  <img class="work_imgs" src="img/screenshots/web/time_main.jpg" height="250" width="400" alt="In-Time Site">
+                </a>
+                <a href="img/mockups/web/time_main_ipad.jpg" data-lightbox="webWork" data-title="In-Time iPad"></a>
+                <a href="img/mockups/web/time_main_iphone.jpg" data-lightbox="webWork" data-title="In-Time iPhone"></a>
+                <a href="img/mockups/web/time_main_iphone_2.jpg" data-lightbox="webWork" data-title="In-Time iPhone Text"></a>
+                <div class="portfolio_brief">
+                  <p><a href="https://github.com/Nicolas5150/in-time" target="_blank">Source File</a>
+                    <span class="right_live"> <a href="http://sulley.cah.ucf.edu/~ni927795/live_demo/in-time-master/" target="_blank">Live Demo</a></span><br/>
+                    <span class="created_with">Created with Materialize, and Google Maps API.</span><br/><br/>
+                    Website built on Google's Materialize framework.<br/>
+                    The website takes in a user's current location and destination (using googles places API). It processes
+                    the two waypoints (using Google's Distance Matrix). After it's calculated, it notifies the user of trip length and when they
+                    should depart their location. Once done they can text themselves, which includes a link to a Google Maps route.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Next-->
           <div class="portfolio_piece">
             <div class="portfolio_title">
               <h3>Surfboard Ecommerce</h3>
