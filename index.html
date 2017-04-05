@@ -55,10 +55,9 @@
           <!--Image carousel goes here-->
           <!--Onclick will do same as navbar-->
           <div id="cycler">
-            <img id="ecom" class="home_imgs active" src="img/mockups/web/ecom_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('2')">
+            <img id="dish" class="home_imgs active" src="img/mockups/web/dish_main_ipad.jpg" height="150" width="180" alt="image" onclick="changeSection('2')">
             <img id="time" class="home_imgs other" src="img/mockups/web/time_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('2')">
             <img id="code" class="home_imgs other" src="img/mockups/code/smart_main_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('3')">
-            <img id="gui" class="home_imgs other" src="img/mockups/code/boggle_main_gui_mac.jpg" height="150" width="180" alt="image" onclick="changeSection('3')">
             <img id="ui" class="home_imgs other" src="img/mockups/ui/line_main_iphone.jpg" height="150" width="180" alt="image" onclick="changeSection('4')">
           </div>
           <!--Only shown on home page to explain to user site navigation
@@ -92,6 +91,34 @@
         <section id="wrapper_web" class="content">
           <!--Repeated structure for all images-->
           <!--Start-->
+          <div class="portfolio_piece">
+            <div class="portfolio_title">
+              <h3>Similar Dish</h3>
+              <div class="portfolio_img">
+                <a href="img/mockups/web/dish_main_mac.jpg" data-lightbox="webWork" data-title="SimilarDish Desktop">
+                  <img class="work_imgs" src="img/screenshots/web/dish_main.jpg" height="250" width="400" alt="SimilarDish Site">
+                </a>
+                <a href="img/mockups/web/dish_main_ipad.jpg" data-lightbox="webWork" data-title="SimilarDish iPad"></a>
+                <a href="img/mockups/web/dish_main_ipad_2.jpg" data-lightbox="webWork" data-title="SimilarDish iPad"></a>
+                <a href="img/mockups/web/dish_main_ipad_3.jpg" data-lightbox="webWork" data-title="SimilarDish iPad"></a>
+                <a href="img/mockups/web/dish_main_iphone.jpg" data-lightbox="webWork" data-title="SimilarDish iPhone"></a>
+                <div class="portfolio_brief">
+                  <p><a href="https://github.com/Nicolas5150/SimilarDish" target="_blank">Source File</a>
+                    <span class="right_live"> <a href="http://sulley.cah.ucf.edu/~ni927795/SimilarDish/" target="_blank">Live Demo</a></span><br/>
+                    <span class="created_with">Created with, Claraifi and Spoonacular API.</span><br/><br/>
+                    Website built on Google's Materialize framework.<br/>
+                    The website takes in a user's image, uploads it, then creates a related url which is sent to Claraifi.
+                    There it processes the image and returns any ingredients it believes are 85% possible of being in the image.
+                    This list is sent to Spoonacular and returns any meals that can be made using the given ingredients.
+                    It is then presented to the user; clicking reveals the needed and given ingredients - as well as the
+                    cooking instructions if possible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Next-->
+
           <div class="portfolio_piece">
             <div class="portfolio_title">
               <h3>Time and Distance</h3>
