@@ -24,7 +24,7 @@
             <li><a class="nav_button" href="#wrapper_about" onclick="changeSection('1');scroll(0,0);">About</a></li>
             <li><a class="nav_button" href="#wrapper_web" onclick="changeSection('2');scroll(0,0);">Web</a></li>
             <li><a class="nav_button" href="#wrapper_code" onclick="changeSection('3');scroll(0,0);">Code</a></li>
-            <li><a class="nav_button" href="#wrapper_ui" onclick="changeSection('4');scroll(0,0);">UI / UX</a></li>
+            <li><a class="nav_button" href="#wrapper_mobile" onclick="changeSection('4');scroll(0,0);">Mobile UI</a></li>
             <li><a class="nav_button" href="#wrapper_photos" onclick="changeSection('5');scroll(0,0);">Photos</a></li>
             <li><a class="nav_button" href="#wrapper_designs" onclick="changeSection('6');scroll(0,0);">Designs</a></li>
             <li><a class="nav_button" href="#wrapper_drawings" onclick="changeSection('7');scroll(0,0);">Drawings</a></li>
@@ -69,18 +69,27 @@
         <section id="wrapper_about" class="content">
           <img src="img/icons/profile.jpg" height="150" width="150" alt="profile image">
           <h1>Hello!</h1>
-          <p>I am a current student at the University of Central Florida
-            obtaining a Bachelor Degree in Digital Media - focus in Web Design -
-            with a minor in Computer Science.
+          <p>
+            <span class="text-extra-bold">Bio</span>
+            I am a recent graduate at the University of Central Florida with a
+            Bachelor Degree in Digital Media - focus in Web Design - with a
+            minor in Computer Science. <br/>
             My passion lies between the intersection of technology and art.
             I enjoy both programming for web and software engineering.
-            At the same time, I also love to design what the layout
-            or interaction for the software will be like.<br/>
-            In school, thus far, I have been educated in both an engineering
-            and an artistic environment.
-            I continue to learn about both fields to refine my skills.
-            Please take a look at the work I have accomplished thus far in school
-            or in personal projects I do on the side.<br/><br/>
+            At the same time, I also love to design what the layout or
+            interaction for the software will be like.<br/><br/>
+
+            <span class="text-extra-bold">Experience</span>
+            <span class="text-bold">Amazon - Design Technologist Intern</span>
+            Worked in concept lab prototyping new ideas and interactions for consumers.<br/>
+            I primarily used React Native to create the mobile solutions.
+            <span class="text-bold">Universal Creative - Creative Design Intern</span>
+            Worked with the creative development  team for their upcoming park in
+            Beijing China. I was tasked to create mood boards, style guides, and do
+            design based research for an up and coming themed land inside the park.
+            <span class="text-bold">Apple - At Home iOS Advisor</span>
+            I was tasked to solve day to day problems with customers iOS running devices.
+            I also had to become well versed with the Mac OS X file structure.<br/><br/>
             All my work can be found on my site or individually at:<br/>
             GitHub: <a href="https://www.github.com/Nicolas5150" target="_blank">www.github.com/Nicolas5150</a><br/>
             Behance: <a href="https://www.behance.net/NicolasDesigns" target="_blank">www.behance.net/NicolasDesigns</a><br/>
@@ -91,6 +100,29 @@
         <section id="wrapper_web" class="content">
           <!--Repeated structure for all images-->
           <!--Start-->
+          <div class="portfolio_piece">
+            <div class="portfolio_title">
+              <h3>Tex Mex Rebrand</h3>
+              <div class="portfolio_img">
+                <a href="img/mockups/web/deans_main_mac.jpg" data-lightbox="webWork" data-title="Deans Rebranding">
+                  <img class="work_imgs" src="img/screenshots/web/deans_main.jpg" height="250" width="400" alt="Deans Rebranding Site">
+                </a>
+                <a href="img/mockups/web/deans_info_mac.jpg" data-lightbox="webWork" data-title="Deans Rebranding - Info"></a>
+                <a href="img/mockups/web/deans_menu_iphone.jpg" data-lightbox="webWork" data-title="Deans Rebranding - iPhone Menu Banner"></a>
+                <div class="portfolio_brief">
+                  <p><a href="https://github.com/Nicolas5150/deans-website-brand" target="_blank">Source File</a>
+                    <span class="right_live"> <a href="http://sulley.cah.ucf.edu/~ni927795/deans/" target="_blank">Live Demo</a></span><br/>
+                    <span class="created_with">Created with HTML, JS, CSS.</span><br/><br/>
+                    Website built on Google's Materialize framework.<br/>
+                    The website is a rebranding of a tex mex restaurant - as a first pass of what the site could end up looking like.<br/>
+                    The site tries to keep use of original logo and color scheme.<br/>
+                    The new site consists of less pages but still has the same contnet expressed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Next-->
           <div class="portfolio_piece">
             <div class="portfolio_title">
               <h3>Similar Dish</h3>
@@ -118,7 +150,6 @@
             </div>
           </div>
           <!--Next-->
-
           <div class="portfolio_piece">
             <div class="portfolio_title">
               <h3>Time and Distance</h3>
@@ -203,26 +234,6 @@
                     JavaScript code includes:<br/>
                     validating a user's input (with regular expressions), and
                     checks for a selected answer, then stores for computation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Next-->
-          <div class="portfolio_piece">
-            <div class="portfolio_title">
-              <h3>Mass Text Messaging</h3>
-              <div class="portfolio_img">
-                <a href="img/mockups/web/text_main_mac.jpg" data-lightbox="webWork" data-title="Mass Text Messaging Desktop" >
-                  <img class="work_imgs" src="img/screenshots/web/text_main.jpg" height="250" width="400" alt="Mass Text Messaging Site"></a>
-                  <a href="img/mockups/web/text_main_ipad.jpg" data-lightbox="webWork" data-title="Mass Text Messaging iPad" ></a>
-                <div class="portfolio_brief">
-                  <p><a href="https://github.com/Nicolas5150/MessageApp" target="_blank">Source File</a>
-                    <span class="right_live"> <a href="http://sulley.cah.ucf.edu/~ni927795/live_demo/message-app-master/php/index.php" target="_blank">Live Demo</a></span><br/>
-                    <span class="created_with">Created with PHP, SQL, and used phpMyAdmin.</span><br/><br/>
-                    A user can create an account and then add phone numbers to a contact list.<br/>
-                    PHP code includes:<br/>
-                    a user can send out a mass text message to all recipients in their contacts.
                   </p>
                 </div>
               </div>
@@ -391,7 +402,7 @@
           <!--End-->
         </section>
 
-        <section id="wrapper_ui" class="content">
+        <section id="wrapper_mobile" class="content">
           <!--Repeated structure for all images-->
           <!--Start-->
           <div class="portfolio_piece">
@@ -484,6 +495,30 @@
               </div>
             </div>
           </div>
+
+          <!--Next-->
+          <div class="portfolio_piece">
+            <div class="portfolio_title">
+              <h3>Mobile Surf Shop </h3>
+              <div class="portfolio_img">
+                <a href="img/mockups/ui/reef_main_iphone.jpg" data-lightbox="uiWork" data-title="Mobile Surf Shop - Main">
+                  <img class="work_imgs" src="img/screenshots/ui/reef_main.jpg" height="400" width="200" alt="Mobile Surf Shop">
+                </a>
+                <a href="img/mockups/ui/reef_products_iphone.jpg" data-lightbox="uiWork" data-title="Mobile Surf Shop  - Products"></a>
+                <a href="img/mockups/ui/reef_cart_iphone.jpg" data-lightbox="uiWork" data-title="Mobile Surf Shop  - Cart"></a>
+                <a href="img/screenshots/ui/reef_site_1.jpg" data-lightbox="uiWork" data-title="Mobile Surf Shop  - Site Map 1"></a>
+                <a href="img/screenshots/ui/reef_site_2.jpg" data-lightbox="uiWork" data-title="Mobile Surf Shop  - Site Map 2"></a>
+                <div class="portfolio_brief">
+                  <p><a href="files/reef_side.sketch" download>Source File</a></br/>
+                    <span class="created_with">Created with Sketch.</span><br/><br/>
+                    A mid fidelity design project, created for a design course. <br/>
+                    The mobile first site is designed to be used to make purchases on products related to surfing and beach related items.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!--Next-->
           <div class="portfolio_piece">
             <div class="portfolio_title">

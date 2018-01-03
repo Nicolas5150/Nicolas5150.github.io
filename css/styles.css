@@ -76,7 +76,7 @@ ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
   height: 100%;
 }
 
-#wrapper_about, #wrapper_web, #wrapper_code, #wrapper_ui, #wrapper_photos,
+#wrapper_about, #wrapper_web, #wrapper_code, #wrapper_mobile, #wrapper_photos,
 #wrapper_designs, #wrapper_drawings {
   margin-left: auto;
   margin-right: auto;
@@ -136,6 +136,21 @@ ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
  text-decoration:none;
 }
 
+.text-extra-bold, .text-bold {
+  display: block;
+}
+
+.text-extra-bold {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.text-bold {
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
 /* Template Image Section */
 .portfolio_piece {
   border-left: 1px solid rgba(128,128,128,0.05);
@@ -192,7 +207,7 @@ ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
 }
 
 /* Individual Tweaks - to portfolio image template styling */
-#wrapper_ui .portfolio_title img {
+#wrapper_mobile .portfolio_title img {
   height: 25%;
   width: 65%;
 }
@@ -213,7 +228,7 @@ ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
     width: 47%;
   }
 
-  #wrapper_ui .portfolio_title img {
+  #wrapper_mobile .portfolio_title img {
     height: 30%;
     width: 45%;
   }
@@ -261,7 +276,7 @@ ul.regular_nav li a:hover, ul.mobile_nav li a:hover {
   }
 
   /* Individual Tweaks - to portfolio image template styling */
-  #wrapper_ui .portfolio_title img {
+  #wrapper_mobile .portfolio_title img {
     height: 15%;
     width: 35%;
   }
