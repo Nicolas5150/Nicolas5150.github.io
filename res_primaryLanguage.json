@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Hey I'm Nic,",
+      "description": "I am currently a front-end engineer at Amazon in the retail org working on the shopping design team. My main priotrites include helping our designers + engineers have an easier work experience. I help build products that assit them - whether it be by creating documetnation sites that thousands of employees see every day, or dedicated tools specific to a team. Prior to my front-end role, I was a design technologist for several years. This role was had me at the intersection of Sr UX designers and engineers. I created several multi-phased, high-fidelity web protoypes to help our teams gain confidence from leadership and our end users. Many of these protoypes ultimatley helped drive what is seen on the Seller Central site today!",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -81,37 +81,76 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "Amazon",
+        "title": "Front End Engineer II",
+        "years": "01/2020 - Current",
         "mainTech": [
-          "Angular 8/9/10"
+          "react"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "React",
+          "TypeScript",
+          "S3",
+          "CloudFront",
+          "CodePipelines",
+          "AWS CDK"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Amazon",
+        "title": "Design Technologist II",
+        "years": "07/2019 - 01/2020",
         "mainTech": [
-          "Angular 7/8"
+          ""
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "React",
+          "S3",
+          "CloudFront",
+          "API Gateway",
+          "AWS Lambda"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "title": "Design Technologist I",
+        "years": "07/2019 - 01/2020",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+          "React",
+          "S3",
+          "CloudFront",
+          "React Native",
+          "Alexa SDK"
+        ]
+      },
+      {
+        "company": "Universal Studios Creative",
+        "title": "Graphic Design Intern",
+        "years": "01/2016 - 08/2016",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+          "Photoshop",
+          "Illustrator",
+          "Physical textures"
+        ]
+      },
+      {
+        "company": "University of Central Florida",
+        "title": "B.A In Digital Media (Web Focus) - W/ Minor In Computer Science",
+        "years": "08/2014 - 12/2017",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+          "Comp Sci & Comp Sci 2",
+          "Object Oriented Programing in Java",
+          "Design Fundamentals 2D & 3D",
+          "Digital Video, Imaging, and Interactive Design"
         ]
       }
     ]
