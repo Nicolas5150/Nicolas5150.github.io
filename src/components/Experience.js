@@ -37,7 +37,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={<i className="fas fa-hourglass-start experience-icon"></i>}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -68,7 +68,7 @@ class Experience extends Component {
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
-                {sectionName}
+                Experience and Education
               </span>
             </h1>
           </div>
@@ -83,7 +83,7 @@ class Experience extends Component {
                 textAlign: "center",
               }}
               icon={
-                <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
+                <i className="fas fa-hourglass-end mx-auto experience-icon"></i>
               }
             />
           </VerticalTimeline>
