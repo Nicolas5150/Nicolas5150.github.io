@@ -11,6 +11,9 @@ class ProjectDetailsModal extends Component {
       const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
+      var situation = this.props.data.star ? this.props.data.star.situation : null;
+      var responsibilities = this.props.data.star ? this.props.data.star.responsibilities : null;
+      var results = this.props.data.star ? this.props.data.star.results : null;
       var url = this.props.data.url;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
@@ -19,7 +22,7 @@ class ProjectDetailsModal extends Component {
               <span>
                 <div className="text-center">
                   <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
+                    <p className="text-center" style={{ fontSize: "45%" }}>
                       {icons.name}
                     </p>
                   </i>
@@ -38,7 +41,7 @@ class ProjectDetailsModal extends Component {
     return (
       <Modal
         {...this.props}
-        size="lg"
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
         className="modal-inside"
@@ -47,27 +50,7 @@ class ProjectDetailsModal extends Component {
           <i className="fas fa-times fa-3x close-icon"></i>
         </span>
         <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
-            </div>
+          <div className="col-md-12 mx-auto" style={{ paddingBottom: "50px" }}>
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
@@ -93,7 +76,17 @@ class ProjectDetailsModal extends Component {
                 </a>
               ) : null}
             </h3>
-            <p className="modal-description">{description}</p>
+
+            <p className="modal-description">
+              <h3>Situation</h3>
+              {situation}
+            </p>
+            <p className="modal-description">
+              <h3>Responsibilities</h3>
+              {responsibilities}</p>
+            <p className="modal-description">
+              <h3>Results</h3>
+              {results}</p>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>

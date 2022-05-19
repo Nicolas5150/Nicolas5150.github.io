@@ -2,6 +2,18 @@
 @import '../src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
+@media (min-width: 1200px) {
+	.modal-xl {
+		max-width: 1345px!important;
+	}
+}
+
+.react-switch {
+	position: fixed!important;
+	top: 5px;
+	right: 20px;
+	z-index: 99;
+}
 html {
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
@@ -130,7 +142,6 @@ header h1 {
 	background: #ffffff;
 	display: inline-block;
 	margin: 0 auto 5% auto;
-	padding: 10px 10px 5px;
 	text-align: center;
 	text-decoration: none;
 	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -162,24 +173,26 @@ header h1 {
 }
 
 .project-title-settings {
-	margin-top: 5%;
+	margin-top: 0px!important;
+	padding-top: 5%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: black;
 	text-align: center;
+	border-top: solid 1px lightgray;
 }
 
 .polaroid img {
 	display: block;
-	max-width: 200px;
+	max-width: 240px;
 }
 
 .polaroid span {
 	background: #ffffff;
 	display: inline-block;
 	margin: 55px 75px 30px;
-	padding: 15px 15px 30px;
+	padding: 15px 15px 50px 15px;
 	text-align: center;
 	text-decoration: none;
 	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -240,7 +253,7 @@ header h1 {
 }
 
 .experience-badge {
-	font-size: 11px !important;
+	font-size: 13px !important;
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
@@ -253,6 +266,7 @@ header h1 {
 .vertical-timeline-element-date {
 	padding: 0 !important;
 	margin: 0 !important;
+	font-weight: bold!important;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -322,10 +336,10 @@ header h1 {
 }
 
 .modal-description {
-	text-align: justify;
+	text-align: left;
 	padding: 5px 5px 0 5px;
 	margin-bottom: 20px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .awssld__next {
