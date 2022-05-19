@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hey I'm Nic,",
-      "description": "I am currently a front-end engineer at Amazon in the retail org working on the shopping design team. My main priotrites include helping our designers + engineers have an easier work experience. I help build products that assit them - whether it be by creating documetnation sites that thousands of employees see every day, or dedicated tools specific to a team. Prior to my front-end role, I was a design technologist for several years. This role was had me at the intersection of Sr UX designers and engineers. I created several multi-phased, high-fidelity web protoypes to help our teams gain confidence from leadership and our end users. Many of these protoypes ultimatley helped drive what is seen on the Seller Central site today!",
+      "description": "I am currently a front-end engineer at Amazon in the retail org working on the shopping design team. My main priotrites include helping our designers + engineers have an easier work experience. I help build products that assist them - whether it be by creating documetnation sites that thousands of employees see every day, or dedicated tools specific to a team. Prior to my front-end role, I was a design technologist for several years. This role was had me at the intersection of Sr UX designers and engineers. I created several multi-phased, high-fidelity web protoypes to help our teams gain confidence from leadership and our end users. Many of these protoypes ultimatley helped drive what is seen on the Seller Central site today!",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,38 +11,55 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
+        "title": "AUI Documentation Site",
+        "startDate": "2021",
         "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "star": {
+          "situation": "Previously, there were independent sites for engineers and designers that both related to the same design system. Because there were two sites, content was regularly out of sync, with data on the designer’s normally behind due to the need of having an engineer push code to the site for changes. A new documentation site was proposed to solve many of these problems and required exploration into different solutions. ",
+          "responsibilities": "I became responsible for much of the site ranging from the initial research to the architectural approach and delegation of work. It started with prototyping using several static site generators such as Gatsby and other internal tools. I was able to eventually gain consensus of the entire deployment lifecycle with prototypes and design reviews with senior leaders. Utilizing Gatsby, provided the opportunity to work with modern front-end frameworks and integrate node build scripts – to consume data from multiple sources. I also was able to connect several internal services together allowing our internal CMS to be the source of truth - giving designers the ability to contribute to the site on their own. Using S3 as the storage for our CMS, an event listener was added to cause our CodePipeline to redeploy our site every time a user made an update to content.",
+          "results": "The new site was able to take over the responsibility of providing documentation of the two older sites and created a single source of truth with a direct way for both engineers and non-technical employees to contribute back into the site. It allowed not only code but also new content from additional data sources to trigger automatic deployments to the website. During the initial month of launch the site, had over 10,000 unique visitors and ~600,000 requests made to it. Though the initial task was to have a site where AUI and Rio design guidelines were combined, since its launch, nine additional Shopping Design teams (and growing) have onboarded as sub-sites."
+        },
+        "more": "here is more",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/aui-docsite/aui-after.png",
+          "images/portfolio/aui-docsite/aui-before.png"
         ],
-        "url": "",
+        "url": "https://www.dropbox.com/home/Portfolio/AUI%20Docsite",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-react-plain",
+            "name": "React"
           },
           {
             "class": "devicon-typescript-plain",
             "name": "TypeScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-gatsby-plain",
+            "name": "Gatsby"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain",
+            "name": "CodePipeline"
           }
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
+        "title": "Seller Central Homepage",
+        "startDate": "2019",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "star": {
+          "situation": "Partnered with a Sr UX Designer who created the initial updated designs of the Homepage (Gateway) makeover on Seller Central. This design change was to give Selling Partners a more intuitive and cohesive homepage, where they could act on clear, relevant, and personalized recommendations. This project was able to allow the Consumer Experience Design (away) team to learn the best approach for delighting our customer with the new Homepage (owning) team on behalf of the them. However, there had to be a parallel achievement with continuing to earn trust from our customers as any user experience change could have negative impact - especially when the homepage had not been changed in years.",
+          "responsibilities": "My responsibilities included creating the initial cards based off the original Sketch files provided to create a pixel perfect replication of what we were looking to have our user groups interact with. A base set of card components were created generically (order card, message card, product card, ect.). This provided to be valuable as we tested many different string, image, and designs throughout the experimentation. I also performed multiple user studies in several countries with team members collecting feedback about the designs and updated experience. This prototype also provided the chance to do a quality check on our partner teams component library to assess if it had all the appropriate components to build the cards. ",
+          "results": "The research and rapid development were leading factors of the card design, influncing the away teams direction for how the experience should look and feel. Becuase of the overall positivity we received fron the feedback during user tests, the work moved into A/B testing and several months later was implemented into the Seller Central homepage as the default layout for users."
+        },
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/homepage/homepage-after-v2.jpg",
+          "images/portfolio/homepage/homepage-after-v1.jpg",
+          "images/portfolio/homepage/homepage-before-updates.jpg",
+          "images/portfolio/homepage/homepage-after-updates.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://www.dropbox.com/home/Portfolio/Homepage%20Cards",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -51,30 +68,43 @@
           {
             "class": "devicon-javascript-plain",
             "name": "JavaScript"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain",
+            "name": "CloudFront"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
+        "title": "Seller Central Nav",
         "startDate": "2015",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "star": {
+          "situation": "Partnered with a Sr UX Designer who created the initial updated designs of the navigation that spanned the entire Seller Central site. This design change was to give Selling Partners a more intuitive and cohesive navigational experience. This project was able to allow the Consumer Experience Design (away) team to learn the best approach for delighting our customer with the new navigation. However, there had to be a parallel achievement with continuing to earn trust from our customers as any user experience change could have negative impact - especially with a core component of the page.",
+          "responsibilities": "I was responsible for creating pixel perfect web prototype representations of the Sketch files provided to me. I took the initial designs and created the multiple variations proposed for user testing. These included: a version which used a drill-down approach, a version with a dropdown approach that (to reveal submenus), a version with a hover approach (with submenus being fly outs on the righthand side). As well as a version with a searchable nav property – to find submenu items",
+          "results": "After several months of prototyping multiple versions of the navigation in user testing, the drill-down nav made its way into live A/B testing for a larger audience to use. During this time, I transitioned to another team and was unable to gather finalized metrics. However, after recently looking back at the Seller Central website, it seems as though the preliminary work paid off as the navigation closely resembles the design intent of the hovering fly out nav that was also tested in the prototypes."
+        },
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/nav/nav-with-search.png",
+          "images/portfolio/nav/nav-drill-down.jpg",
+          "images/portfolio/nav/nav-dropdown.jpg",
+          "images/portfolio/nav/nav-hover-fly-out.jpg",
+          "images/portfolio/nav/nav-before-updates.jpg",
+          "images/portfolio/nav/nav-current.png"
         ],
-        "url": "https://github.com",
+        "url": "https://www.dropbox.com/home/Portfolio/Homepage%20Nav",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-react-original",
+            "name": "React"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-amazonwebservices-plain",
+            "name": "CloudFront"
           }
         ]
       }
@@ -85,13 +115,12 @@
         "title": "Front End Engineer II",
         "years": "01/2020 - Current",
         "mainTech": [
-          "react"
+          ""
         ],
         "technologies": [
           "React",
           "TypeScript",
-          "S3",
-          "CloudFront",
+          "Node JS",
           "CodePipelines",
           "AWS CDK"
         ]
@@ -114,7 +143,7 @@
       {
         "company": "Amazon",
         "title": "Design Technologist I",
-        "years": "07/2019 - 01/2020",
+        "years": "05/2017 - 08/2017 & 05/2018 - 07/2019",
         "mainTech": [
           ""
         ],
