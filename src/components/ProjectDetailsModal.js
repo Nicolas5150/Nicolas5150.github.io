@@ -10,7 +10,6 @@ class ProjectDetailsModal extends Component {
       const technologies = this.props.data.technologies;
       const images = this.props.data.images;
       var title = this.props.data.title;
-      var description = this.props.data.description;
       var situation = this.props.data.star ? this.props.data.star.situation : null;
       var responsibilities = this.props.data.star ? this.props.data.star.responsibilities : null;
       var results = this.props.data.star ? this.props.data.star.results : null;
@@ -33,7 +32,9 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return <div key={i} data-src={elem}>  
+              <div className="slider-caption">{this.props.data.caption ? this.props.data.caption[i] : null}</div> 
+            </div>;
           });
         }
       }

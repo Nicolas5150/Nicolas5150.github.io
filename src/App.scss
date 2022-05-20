@@ -6,6 +6,30 @@
 	.modal-xl {
 		max-width: 1345px!important;
 	}
+
+
+}
+
+@media (min-width: 1300px) {
+	.foto img {
+		min-width: 390px;
+	}
+}
+
+.modal-open .awssld__content img {
+	image-rendering: -webkit-optimize-contrast;
+}
+
+.slider-caption {
+	z-index: 999;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    bottom: 5px;
+    right: 15px;
+    background-color: gray;
+	padding: 5px;
+	opacity: 0.85;
 }
 
 .react-switch {
@@ -361,7 +385,7 @@ header h1 {
 
 .portfolio-item {
 	max-width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 45px;
 	text-align: center;
 }
 

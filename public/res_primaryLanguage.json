@@ -12,8 +12,7 @@
     "projects": [
       {
         "title": "AUI Documentation Site",
-        "startDate": "2021",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "startDate": "2020",
         "star": {
           "situation": "Previously, there were independent sites for engineers and designers that both related to the same design system. Because there were two sites, content was regularly out of sync, with data on the designer’s normally behind due to the need of having an engineer push code to the site for changes. A new documentation site was proposed to solve many of these problems and required exploration into different solutions. ",
           "responsibilities": "I became responsible for much of the site ranging from the initial research to the architectural approach and delegation of work. It started with prototyping using several static site generators such as Gatsby and other internal tools. I was able to eventually gain consensus of the entire deployment lifecycle with prototypes and design reviews with senior leaders. Utilizing Gatsby, provided the opportunity to work with modern front-end frameworks and integrate node build scripts – to consume data from multiple sources. I also was able to connect several internal services together allowing our internal CMS to be the source of truth - giving designers the ability to contribute to the site on their own. Using S3 as the storage for our CMS, an event listener was added to cause our CodePipeline to redeploy our site every time a user made an update to content.",
@@ -24,7 +23,11 @@
           "images/portfolio/aui-docsite/aui-after.png",
           "images/portfolio/aui-docsite/aui-before.png"
         ],
-        "url": "https://www.dropbox.com/home/Portfolio/AUI%20Docsite",
+        "caption": [
+          "After completing site",
+          "Original site"
+        ],
+        "url": "https://www.dropbox.com/sh/ekpq7jxout444p1/AACq2Fd_qmoUREmWPOmEurtja?dl=0",
         "technologies": [
           {
             "class": "devicon-react-plain",
@@ -47,7 +50,6 @@
       {
         "title": "Seller Central Homepage",
         "startDate": "2019",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "star": {
           "situation": "Partnered with a Sr UX Designer who created the initial updated designs of the Homepage (Gateway) makeover on Seller Central. This design change was to give Selling Partners a more intuitive and cohesive homepage, where they could act on clear, relevant, and personalized recommendations. This project was able to allow the Consumer Experience Design (away) team to learn the best approach for delighting our customer with the new Homepage (owning) team on behalf of the them. However, there had to be a parallel achievement with continuing to earn trust from our customers as any user experience change could have negative impact - especially when the homepage had not been changed in years.",
           "responsibilities": "My responsibilities included creating the initial cards based off the original Sketch files provided to create a pixel perfect replication of what we were looking to have our user groups interact with. A base set of card components were created generically (order card, message card, product card, ect.). This provided to be valuable as we tested many different string, image, and designs throughout the experimentation. I also performed multiple user studies in several countries with team members collecting feedback about the designs and updated experience. This prototype also provided the chance to do a quality check on our partner teams component library to assess if it had all the appropriate components to build the cards. ",
@@ -59,7 +61,13 @@
           "images/portfolio/homepage/homepage-before-updates.jpg",
           "images/portfolio/homepage/homepage-after-updates.jpg"
         ],
-        "url": "https://www.dropbox.com/home/Portfolio/Homepage%20Cards",
+        "caption": [
+          "Only cards on homepage protoype",
+          "Hybrid version with cards and widgets",
+          "Original production homepage",
+          "Production homepage after updates"
+        ],
+        "url": "https://www.dropbox.com/sh/jvcqlvhkws87dbc/AABV-Fk2K0NyzBln8sMGcSWqa?dl=0",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -77,8 +85,7 @@
       },
       {
         "title": "Seller Central Nav",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "startDate": "2019",
         "star": {
           "situation": "Partnered with a Sr UX Designer who created the initial updated designs of the navigation that spanned the entire Seller Central site. This design change was to give Selling Partners a more intuitive and cohesive navigational experience. This project was able to allow the Consumer Experience Design (away) team to learn the best approach for delighting our customer with the new navigation. However, there had to be a parallel achievement with continuing to earn trust from our customers as any user experience change could have negative impact - especially with a core component of the page.",
           "responsibilities": "I was responsible for creating pixel perfect web prototype representations of the Sketch files provided to me. I took the initial designs and created the multiple variations proposed for user testing. These included: a version which used a drill-down approach, a version with a dropdown approach that (to reveal submenus), a version with a hover approach (with submenus being fly outs on the righthand side). As well as a version with a searchable nav property – to find submenu items",
@@ -92,7 +99,111 @@
           "images/portfolio/nav/nav-before-updates.jpg",
           "images/portfolio/nav/nav-current.png"
         ],
-        "url": "https://www.dropbox.com/home/Portfolio/Homepage%20Nav",
+        "caption": [
+          "Nav protoype with search bar",
+          "Nav protoype with drill down menu",
+          "Nav protoype with dropdowns",
+          "Nav protoype with fly out",
+          "Original production nav",
+          "Production nav after updates"
+        ],
+        "url": "https://www.dropbox.com/sh/g8sy44sczn0qbj4/AACQjsjfKsaQi8YIzgFKlCxma?dl=0",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain",
+            "name": "CloudFront"
+          }
+        ]
+      },
+      {
+        "title": "Component Exploration",
+        "startDate": "2022",
+       "star": {
+          "situation": "The retail design tools team wanted to explore creating our own set of Amazon UI components that could be utilized by designers in a Storybook (configurator) and by prototypers in a React code package. This was because the current AUI component logic only allowed for server-side components built through their proprietary templating language. This has caused friction for experimentation and ideation as the ramp up to using the components is steep. There is not a quick way currently to test new themes and designs – which has led to long periods required to get engineering to build and test new ideas.",
+          "responsibilities": "I executed the proof-of-concept work, which included creating the core form components in React – to look like our 3-year plan design intent. This required building it to accept theme overrides. I also worked with our partner teams Sr Design Technologist to integrate the work into their component configurator, which would allow for UX designers to visualize permutations or explore all the components and their properties. I worked heavily with a style dictionary to generate design tokens at the core, common, and component level.",
+          "results": "I was able to successfully create the components for the future facing design with included motion and error states. I was also able to create the desired form prototype showing the components being used together in a shipping workflow on a mobile device. However, after several months of building out the components to scale with proper accessibility, working in most browsers, and getting sign-off from designers, it was decided that the level of effort would require more engineering effort to accomplish creating all 40 or more components in a 1:1 fashion. Therefore, the project was put on hold for the time being."
+        },
+        "images": [
+          "images/portfolio/component/text-input.png",
+          "images/portfolio/component/checkbox.png"
+        ],
+        "caption": [
+          "Component Configurator page with active text input",
+          "Component Configurator page with active checkbox"
+        ],
+        "url": "https://www.dropbox.com/sh/rbqowmga76fbles/AABQdkfAaAs-4YMdvzw45oBna?dl=0",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-amazonwebservices-plain",
+            "name": "CloudFront"
+          }
+        ]
+      },
+      {
+        "title": "Image Moderator Tool",
+        "startDate": "2022",
+        "star": {
+          "situation": "The objective was to prioritize and complete the identified 2021 roadmap goals that would otherwise be missed if no-one were to step in on behalf of the Homepage team. Accomplishing these tasks allowed the Homepage team to speed up internal review times and be provided deeper metric readouts. Though this was a preexisting application, all the tools within it needed to be modified in some way to meet the requirements.",
+          "responsibilities": "I accomplished the flowing tasks: enhanced the character count feature, enhanced type size measurement feature, enhanced accessibility contrast feature, and created a way to filter out approved or rejected images. After deep diving into the project, I saw an opportunity to refactor and clean up code where it would be beneficial for long term maintainability. As I provided the developer updates for the enhanced feature requests, I also split apart and abstracted the existing tools into their own modular React components. Prior to his work, much of the core logic for the tool were implemented inside a single file which was difficult to support.",
+          "results": "Performing these changes allowed the gateway team to maximize their time spent while moderating images within SIM. With over 43,956 assets in the queue, the tool, and its updates, were estimated to save approximately 1 minute per asset which resolved to 557 hours of review time off our Core Review queue - or about 14 weeks of work. "
+        },
+        "images": [
+          "images/portfolio/image-mod/image-mod-color-tool.png",
+          "images/portfolio/image-mod/image-mod-count-tool.png"
+        ],
+        "caption": [
+          "Tool being used with color contrast selector",
+          "Tool being used with text count selector"
+        ],
+        "url": "https://www.dropbox.com/sh/v0057wuy6rw6jqd/AACIGmSathH83MldB2UO2Q1Ta?dl=0",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-chrome-plain",
+            "name": "Tampermonkey"
+          }
+        ]
+      },
+      {
+        "title": "Flo Documentation Site",
+        "startDate": "2022",
+        "star": {
+          "situation": "The Core Experience Design (CXD) team had a previous documentation site built on their behalf from an engineer on an away-team. Created with a simple static HTML template, it was designed as a rapid solution for an immediate need to provide information to designers on the proper usage of the Flo design guidelines. The original site was not built to scale and was tedious to include updates. For example, navigation was hard-coded into every page and required each HTML document (approximately 50) to be touched any time a new page was added in. It also required that the content be written directly into the plain HTML files and had no reusability within the site making updates take much longer than needed.",
+          "responsibilities": "After maintaining the original site for several months, and having to make time consuming manual changes, Nicolas took it upon himself to do an investigation into refactoring the current site or architecting a new solution. Once a deep dive on the existing code base was finished, it was concluded that due to the current architecture, it would be better to deprecate the site in favor of a more modern approach. A new site would be built to automate more processes and make enhancements as well as maintenance easier to accomplish. Included in the new site was a multipart form submission page. This addition allowed for users to enter in a predefined set of fields - to create articles for the site. The form field was submitted via an API Gateway call to a Lambda which stored the content in DynamoDB and S3. Content approval was done through a table that allowed pages to be managed by the CXD team. Thus, creating a custom content management system.",
+          "results": "The new documentation site was a team level requirement that was launched successfully by the expected date. Even though it was a team level goal, the use case and expected audience for the site was for any designer or engineer looking for more information on the Flo design system within both the Seller and Vendor Org."
+        },
+        "images": [
+          "images/portfolio/flo-docsite/flo-after.jpg",
+          "images/portfolio/flo-docsite/flo-before.png"
+        ],
+        "caption": [
+          "After completing site",
+          "Original site"
+        ],
+        "url": "https://www.dropbox.com/scl/fo/42b8txflct82kmyq7a0b6/h?dl=0&rlkey=dqlc28m7apvmappkjm85cog4r",
         "technologies": [
           {
             "class": "devicon-react-original",
